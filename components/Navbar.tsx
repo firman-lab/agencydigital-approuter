@@ -27,7 +27,7 @@ export default function Navbar() {
         console.log(open);
     }
   return (
-    <div className='container'>
+    <div className='container z-[100]'>
        <section className='fixed w-full z-10 px-8 md:px-12 dark:bg-black bg-green-dark backdrop-blur-md dark:transition dark:ease-in dark:duration-200'>
             <div className='flex justify-between items-center'>
                 <div className='w-24 h-8 my-6 md:w-32 flex flex-row justify-center items-center gap-2'>

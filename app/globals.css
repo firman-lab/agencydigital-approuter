@@ -26,6 +26,21 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.highligth-text{
+  background: linear-gradient(
+    to bottom,
+    transparent 70%,
+    #B7EB38 30%
+  );
+}
+.highligth-text-reverse{
+  background: linear-gradient(
+    to bottom,
+    transparent 60%,
+    #B7EB38 40%
+  );
+}
+
 @layer utilities {
   .active {
     @apply !text-green-light dark:!text-green-light underline underline-offset-8 decoration-slate-400;
