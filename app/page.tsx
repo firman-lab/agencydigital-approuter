@@ -98,9 +98,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full bg-green-dark mt-4 py-4 sm:py-8">
+        <section className="relative w-full bg-green-dark mt-4 py-4 sm:py-8">
           <div className="container mx-auto">
-            <div className="relative px-16 sm:px-32 py-4 sm:py-8">
+            <div className="px-16 sm:px-32 py-4 sm:py-8">
               <div className="absolute left-80 bottom-0 md:left-52 md:top-0 h-full">
                 <Image
                   src={"/icon/kruwel.svg"}

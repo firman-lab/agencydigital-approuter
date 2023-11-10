@@ -12,9 +12,9 @@ export default function CardPrice(props: CardPrice) {
   return (
     <>
       {/* <!-- Pricing Card --> */}
-      <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-green-dark dark:text-white scale-105 lg:hover:scale-110 transition-all ease-in">
+      <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-green-dark dark:text-white hover:scale-105 transition-all ease-in">
         <h3 className="mb-4 text-2xl font-semibold">{title}</h3>
-        <p className="font-light text-gray-500 text-sm sm:text-lg dark:text-gray-400">
+        <p className="font-light text-gray-500 text-xs sm:text-base 2xl:text-lg dark:text-gray-400">
           {desc}
         </p>
         <div className="flex justify-center items-baseline my-8">
@@ -39,7 +39,7 @@ export default function CardPrice(props: CardPrice) {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span>{data}</span>
+                <span className="text-sm sm:text-base">{data}</span>
               </li>
             ))}
           </ul>
