@@ -8,10 +8,10 @@ export default function Home() {
       <Navbar />
       <main className="p-0 m-0 bg-[#EDF3F1] overflow-hidden">
         <section className="container mx-auto">
-          <div className="flex flex-1 sm:flex-row flex-col-reverse gap-4 xl:gap-8 items-center justify-between pt-28 sm:pt-40 pb-16 px-4 sm:px-8 lg:px-16 2xl:p-32">
+          <div className="flex flex-1 sm:flex-row flex-col-reverse gap-4 xl:gap-8 items-center justify-between pt-28 sm:pt-40 pb-8 sm:pb-16 px-4 sm:px-8 lg:px-16 2xl:p-32">
             <div className="flex flex-col justify-start items-start pl-4">
               <p className="text-lg text-green-light font-medium bg-green-dark px-1 my-4">
-                #JasaBikinWebsite
+                #BikinWebsiteGaPakeRibet 
               </p>
               <div className="flex flex-auto gap-2 sm:gap-4 text-4xl xl:text-6xl font-bold">
                 <h1 className="px-1 highligth-text">Making</h1>
@@ -35,73 +35,70 @@ export default function Home() {
                 <button
                   className={`bg-transparent py-2 lg:py-4 px-4 lg:px-8 text-sm md:text-base font-medium text-green-dark rounded-full border-green-dark border-[1px] hover:bg-green-light hover:border-greenlight hover:text-green-dark`}
                 >
-                  Hasil Kerja
+                  Pricelist
                 </button>
               </div>
             </div>
-            {/* <div className="flex flex-initial justify-start"> */}
-            <Image
-              src={"/images/banner_hero.png"}
-              width={550}
-              height={507}
-              alt="hero"
-              className="w-full xl:w-1/2"
-            />
-            {/* </div> */}
+            <div className="flex-initial justify-start hidden sm:flex">
+              <Image
+                src={"/images/banner_hero.png"}
+                width={550}
+                height={507}
+                alt="hero"
+                className="w-full xl:w-10/12 "
+              />
+            </div>
           </div>
         </section>
-        <section className="py-4 sm:py-8 container mx-auto">
-          <div className="px-4 flex flex-col justify-center items-center">
+        <section className="py-0 sm:py-8 container mx-auto">
+          <div className="w-full px-4 flex flex-col justify-center items-center">
             <h3 className="text-xl sm:text-3xl font-semibold">
               We&apos;re Helping Big
             </h3>
             <h3 className="text-xl sm:text-3xl font-semibold leading-normal md:leading-10">
               Global Company Grow
             </h3>
-            <div className=" w-full flex flex-row gap-2 md:gap-8 justify-evenly items-center py-8">
-              <div className="flex flex-row gap-2 items-center justify-center max-w-lg">
+            {/* <div className="flex flex-row gap-2 md:gap-24 justify-evenly items-center py-6 sm:py-8">
+                <Image
+                  src={"/images/ifixied.webp"}
+                  width={120}
+                  height={101}
+                  alt="client"
+                  className="bg-green-dark px-4 py-1 rounded w-3/12 aspect-3/2 object-contain"
+                />
+                <Image
+                  src={"/images/dpk-mini.png"}
+                  width={120}
+                  height={101}
+                  alt="client"
+                  className="bg-green-dark px-4 py-1 rounded w-3/12 aspect-3/2 object-contain"
+                />
                 <Image
                   src={"/icon/ifixied.webp"}
-                  width={100}
-                  height={100}
+                  width={120}
+                  height={101}
                   alt="client"
-                  className="bg-green-dark px-1 py-1 rounded-md"
+                  className="bg-green-dark px-4 py-1 rounded w-3/12 aspect-3/2 object-contain"
                 />
-              </div>
-              <div className="flex flex-row gap-2 items-center justify-center">
                 <Image
-                  src={"/icon/ifixied.webp"}
-                  width={100}
-                  height={100}
+                  src={"/images/dpk-mini.png"}
+                  width={120}
+                  height={101}
                   alt="client"
-                  className="bg-green-dark px-1 py-1"
+                  className="bg-green-dark px-4 py-1 rounded w-3/12 aspect-3/2 object-contain"
                 />
+            </div> */}
+            {/* <div className="flex flex-row gap-2 md:gap-24 justify-evenly items-center py-6 sm:py-8">
+              <div className="grid grid-flow-row">
+                
               </div>
-              <div className="flex flex-row gap-2 items-center justify-center">
-                <Image
-                  src={"/icon/ifixied.webp"}
-                  width={100}
-                  height={100}
-                  alt="client"
-                  className="bg-green-dark px-1 py-1 rounded-md"
-                />
-              </div>
-              <div className="flex flex-row gap-2 items-center justify-center max-w-md">
-                <Image
-                  src={"/icon/ifixied.webp"}
-                  width={100}
-                  height={100}
-                  alt="client"
-                  className="bg-green-dark px-1 py-1 rounded-md"
-                />
-              </div>
-            </div>
+            </div> */}
           </div>
         </section>
         <section className="relative w-full bg-green-dark mt-4 py-4 sm:py-8">
           <div className="container mx-auto">
             <div className="px-16 sm:px-32 py-4 sm:py-8">
-              <div className="absolute left-80 bottom-0 md:left-52 md:top-0 h-full">
+              <div className="absolute left-80 bottom-0  md:-left-10 md:top-0 h-full">
                 <Image
                   src={"/icon/kruwel.svg"}
                   height={500}
