@@ -2,7 +2,9 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import CardPrice from "./Atom/CardPrice";
+import TabWordpress from "./Organism/TabWordpress";
+import TabCustom from "./Organism/TabCustom";
+import TabwithDatabase from "./Organism/TabwithDatabase";
 
 const tabData = ["regular", "pro", "custom"];
 
@@ -69,13 +71,6 @@ export default function TabService() {
                     openTab === 1 ? "bg-green-light" : "bg-[#ABB4B1]"
                   }`}
                 >
-                  {/* <Image
-                    src={"/icon/code.svg"}
-                    height={32}
-                    width={32}
-                    alt="ic-code"
-                    className="w-4 sm:w-8"
-                  /> */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -86,7 +81,7 @@ export default function TabService() {
                     <path d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z"></path>
                   </svg>
                 </div>
-                Custom Website
+                Website Dinamis
               </div>
             </li>
             <li className="p-0" onClick={() => setOpenTab(2)}>
@@ -102,13 +97,6 @@ export default function TabService() {
                     openTab === 2 ? "bg-green-light" : "bg-[#ABB4B1]"
                   }`}
                 >
-                  {/* <Image
-                      src={"/icon/mongo.svg"}
-                      height={32}
-                      width={32}
-                      alt="ic-code"
-                      className="w-4 sm:w-8"
-                    /> */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -125,263 +113,22 @@ export default function TabService() {
           </ul>
           <div className="px-4 lg:px-8 xl:px-32">
             <div className={openTab === 0 ? "block" : "hidden"}>
-              <div className="w-full flex flex-1 flex-row justify-center gap-2 my-8">
-                <section className="bg-white h-[580px] sm:h-full overflow-scroll lg:overflow-hidden border-green-light border-2 sm:border-0 rounded-xl shadow-lg sm:shadow shadow-black/25 sm:shadow-transparent">
-                  <div className="py-4 px-4 lg:py-16">
-                    {/* <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-                        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-                          Designed for business teams like yours
-                        </h2>
-                        <p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
-                          Here at Flowbite we focus on markets where technology,
-                          innovation, and capital can unlock long-term value and
-                          drive economic growth.
-                        </p>
-                      </div> */}
-                    <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-                      <CardPrice
-                        title="Reguler"
-                        desc="Landing page untuk FB ads, Instagram Ads, dll"
-                        price="78K"
-                        features={[
-                          "1 Page",
-                          "Bebas Pilih Template Design",
-                          "1 Sub Domain (svara.tertanam.com)",
-                          "No Hidden, or Setup fees",
-                        ]}
-                      />
-                      <CardPrice
-                        title="Premium"
-                        desc="Website untuk FB ads, Instagram ads, detail usaha dan produk "
-                        price="98K"
-                        features={[
-                          "1-3 Page",
-                          "Bebas Pilih Template Design",
-                          "1 Sub Domain (svara.tertanam.com)",
-                          "No Hidden, or Setup fees",
-                          "Free 1x update Design per 3 bulan",
-                        ]}
-                      />
-                      <CardPrice
-                        title="Full Custom"
-                        desc="Custom Landing Page full sesuai desain yang kamu mau"
-                        price="269K"
-                        features={[
-                          "1-9 Page",
-                          "Free Design by You",
-                          "Free 1 Domain ( .com )",
-                          "No Hidden, or Setup fees",
-                          "Premium Support 24 Jam",
-                          "Free 1x Update Design perbulan",
-                        ]}
-                      />
-                    </div>
-                  </div>
-                </section>
-              </div>
+              <TabWordpress />
             </div>
-            <div className={openTab === 1 ? "block" : "hidden"}>
-              <div className="w-full flex flex-1 flex-row justify-center gap-2 my-8">
-                <section className="bg-white h-[580px] sm:h-full overflow-scroll lg:overflow-hidden border-green-light border-2 sm:border-0 rounded-xl shadow-lg sm:shadow shadow-black/25 sm:shadow-transparent">
-                  <div className="py-4 px-4 lg:py-16">
-                    <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-                      <CardPrice
-                        title="Reguler"
-                        desc="Landing page untuk FB ads, Instagram Ads, dll"
-                        price="78K"
-                        features={[
-                          "1 Page",
-                          "Bebas Pilih Template Design",
-                          "1 Sub Domain (svara.tertanam.com)",
-                          "No Hidden, or Setup fees",
-                        ]}
-                      />
-                      <CardPrice
-                        title="Premium"
-                        desc="Website untuk FB ads, Instagram ads, detail usaha dan produk "
-                        price="98K"
-                        features={[
-                          "1-3 Page",
-                          "Bebas Pilih Template Design",
-                          "1 Sub Domain (svara.tertanam.com)",
-                          "No Hidden, or Setup fees",
-                          "Free 1x update Design per 3 bulan",
-                        ]}
-                      />
-                      <CardPrice
-                        title="Full Custom"
-                        desc="Custom Landing Page full sesuai desain yang kamu mau"
-                        price="399K"
-                        features={[
-                          "1-9 Page",
-                          "Free Design by You",
-                          "Free 1 Domain ( .com )",
-                          "No Hidden, or Setup fees",
-                          "Premium Support 24 Jam",
-                          "Free 1x Update Design perbulan",
-                        ]}
-                      />
-                    </div>
-                  </div>
-                </section>
-              </div>
+            <div
+              className={`${
+                openTab === 1 ? "block " : "hidden"
+              } py-4 sm:px-4 lg:py-8`}
+            >
+              <TabCustom />
             </div>
-            <div className={openTab === 2 ? "block" : "hidden"}>
-              <div className=" bg-green-dark w-full flex flex-1 flex-row justify-center gap-2 my-8 rounded-xl">
-                <section className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
-                  <div className="p-0 m-0">
-                    <Image
-                      src={"/images/banner_hero.png"}
-                      height={700}
-                      width={700}
-                      alt="image-Custom-web"
-                    />
-                  </div>
-                  <div className="p-8">
-                    <div className="flex flex-col p-8 mx-auto gap-8">
-                      <div className="flex flex-col justify-center sm:justify-start items-center sm:items-start">
-                        <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">
-                          Software as a Service
-                          <br />
-                          Website Terintegrasi Database
-                        </h1>
-                        <p className="text-sm sm:text-base leading-6 pt-2 text-gray-400">
-                          Website dengan performa cepat sesuai kebutuhan bisnis
-                          yang anda jalankan.
-                        </p>
-                      </div>
-                      <div className="flex flex-col justify-center items-center">
-                        <p className="text-gray-300 text-sm sm:text-base">Start From</p>
-                        <div className="flex justify-center items-baseline">
-                          <span className="mr-2 text-2xl sm:text-3xl lg:text-5xl font-extrabold text-white">
-                            2.899K
-                          </span>
-                          <span className="text-gray-300">/Bulan</span>
-                        </div>
-                      </div>
-                      <ul className="space-y-4 px-4 text-white">
-                        <li className="flex items-center space-x-3">
-                          {/* <!-- Icon --> */}
-                          <svg
-                            className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                              clipRule="evenodd"
-                            ></path>
-                          </svg>
-                          <span className="text-sm sm:text-base">
-                            CMS, Admin Dashboard, SaaS, HR Management
-                          </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                          {/* <!-- Icon --> */}
-                          <svg
-                            className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                              clipRule="evenodd"
-                            ></path>
-                          </svg>
-                          <span className="text-sm sm:text-base">
-                            Integrasi ke Database
-                          </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                          {/* <!-- Icon --> */}
-                          <svg
-                            className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                              clipRule="evenodd"
-                            ></path>
-                          </svg>
-                          <span className="text-sm sm:text-base">
-                            Build with Next JS Framework Javascript Terpopuler
-                          </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                          {/* <!-- Icon --> */}
-                          <svg
-                            className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                              clipRule="evenodd"
-                            ></path>
-                          </svg>
-                          <span className="text-sm sm:text-base">
-                            Free 1 Domain .com/.id/.co.id
-                          </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                          {/* <!-- Icon --> */}
-                          <svg
-                            className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                              clipRule="evenodd"
-                            ></path>
-                          </svg>
-                          <span className="text-sm sm:text-base">
-                            Lifetime Maintanance
-                          </span>
-                        </li>
-                      </ul>
-                      <a
-                        href="#"
-                        className="text-green-dark bg-green-light hover:bg-green-light/50 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-green-dark hover:text-green-light-text dark:focus:ring-primary-900"
-                      >
-                        Pesan Sekarang
-                      </a>
-                    </div>
-                  </div>
-                </section>
-              </div>
+            <div
+              className={`${
+                openTab === 2 ? "block " : "hidden"
+              } py-4 sm:px-4 lg:py-8`}
+            >
+              <TabwithDatabase />
             </div>
-            {/* <div className={openTab === 1 ? "block" : "hidden"}>
-                <div className="w-full min-h-max flex flex-1 flex-row gap-2 my-8">
-                  <Image
-                    src={"/images/banner_hero.png"}
-                    height={500}
-                    width={500}
-                    alt="regular-pack"
-                  />
-                </div>
-              </div>
-              <div className={openTab === 2 ? "block" : "hidden"}>
-                <div className="w-full min-h-max flex flex-1 flex-row gap-2 my-8">
-                  <Image
-                    src={"/images/regular.svg"}
-                    height={500}
-                    width={500}
-                    alt="regular-pack"
-                  />
-                </div>
-              </div> */}
           </div>
         </div>
       </div>

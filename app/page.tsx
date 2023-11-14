@@ -11,7 +11,7 @@ export default function Home() {
           <div className="flex flex-1 sm:flex-row flex-col-reverse gap-4 xl:gap-8 items-center justify-between pt-28 sm:pt-40 pb-8 sm:pb-16 px-4 sm:px-8 lg:px-16 2xl:p-32">
             <div className="flex flex-col justify-start items-start pl-4">
               <p className="text-lg text-green-light font-medium bg-green-dark px-1 my-4">
-                #BikinWebsiteGaPakeRibet 
+                #BikinWebsiteGaPakeRibet
               </p>
               <div className="flex flex-auto gap-2 sm:gap-4 text-4xl xl:text-6xl font-bold">
                 <h1 className="px-1 highligth-text">Making</h1>
@@ -58,41 +58,6 @@ export default function Home() {
             <h3 className="text-xl sm:text-3xl font-semibold leading-normal md:leading-10">
               Global Company Grow
             </h3>
-            {/* <div className="flex flex-row gap-2 md:gap-24 justify-evenly items-center py-6 sm:py-8">
-                <Image
-                  src={"/images/ifixied.webp"}
-                  width={120}
-                  height={101}
-                  alt="client"
-                  className="bg-green-dark px-4 py-1 rounded w-3/12 aspect-3/2 object-contain"
-                />
-                <Image
-                  src={"/images/dpk-mini.png"}
-                  width={120}
-                  height={101}
-                  alt="client"
-                  className="bg-green-dark px-4 py-1 rounded w-3/12 aspect-3/2 object-contain"
-                />
-                <Image
-                  src={"/icon/ifixied.webp"}
-                  width={120}
-                  height={101}
-                  alt="client"
-                  className="bg-green-dark px-4 py-1 rounded w-3/12 aspect-3/2 object-contain"
-                />
-                <Image
-                  src={"/images/dpk-mini.png"}
-                  width={120}
-                  height={101}
-                  alt="client"
-                  className="bg-green-dark px-4 py-1 rounded w-3/12 aspect-3/2 object-contain"
-                />
-            </div> */}
-            {/* <div className="flex flex-row gap-2 md:gap-24 justify-evenly items-center py-6 sm:py-8">
-              <div className="grid grid-flow-row">
-                
-              </div>
-            </div> */}
           </div>
         </section>
         <section className="relative w-full bg-green-dark mt-4 py-4 sm:py-8">
@@ -152,7 +117,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-        <TabService />
+      <TabService />
     </>
   );
 }
