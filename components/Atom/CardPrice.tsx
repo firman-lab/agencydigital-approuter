@@ -22,7 +22,8 @@ export default function CardPrice(props: CardPrice) {
           {desc}
         </p>
         <div className="flex justify-center items-baseline my-8">
-          <span className="mr-2 text-2xl sm:text-3xl lg:text-5xl font-extrabold">{`IDR ${price}`}</span>
+        <span className="text-white pr-2">IDR</span>
+          <span className="mr-2 text-2xl sm:text-3xl lg:text-5xl font-extrabold">{`${price}`}</span>
           <span className="text-gray-400">/Bulan</span>
         </div>
         {/* <!-- List --> */}
