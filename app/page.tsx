@@ -124,9 +124,9 @@ export default function Home() {
       <TabService />
       <section className="bg-green-light-text">
         <div className="container mx-auto px-8">
-          <div className="flex flex-col justify-evenly items-center gap-6 lg:gap-12 md:flex-row py-8">
+          <div className="flex flex-col justify-evenly items-center gap-6 lg:gap-12 md:flex-row py-8 lg:py-16">
             <div className="flex flex-col justify-center md:justify-start items-center md:items-start lg:max-w-xl">
-              <h1 className="text-xl lg:text-3xl font-semibold">
+              <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold">
                 Design Modern UX Friendly
               </h1>
               <p className="text-sm lg:text-base pt-2 lg:pt-3 text-center md:text-left">
@@ -134,7 +134,7 @@ export default function Home() {
                 sesukamu. Puluhan design sudah kami siapkan.
               </p>
               <button
-                className={`mt-6 lg:mt-12 bg-green-light py-2 lg:py-4 px-4 lg:px-8 text-sm md:text-base font-medium text-green-dark rounded-full border-[1px] border-green-dark hover:bg-green-dark hover:border-green-dark hover:text-white`}
+                className={`mt-6 lg:mt-12 bg-green-light py-4 lg:py-4 px-6 lg:px-8 text-sm md:text-base font-medium text-green-dark rounded-full border-[1px] border-green-dark hover:bg-green-dark hover:border-green-dark hover:text-white`}
               >
                 Pilih Design
               </button>
@@ -154,7 +154,7 @@ export default function Home() {
       <section className="bg-white">
         <div className="container mx-auto py-8 sm:py-16 px-8 sm:px-16">
           <div className="flex flex-col justify-center items-center gap-2 sm:gap-4">
-            <h1 className="text-xl lg:text-3xl font-semibold">
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold">
               Cara Order Sangat Mudah
             </h1>
             <p className="text-sm sm:text-base text-center">
@@ -170,7 +170,6 @@ export default function Home() {
               />
             </div>
             <div className="w-full flex flex-col lg:flex-row lg:justify-between justify-center items-center gap-4 pt-8 lg:pt-0">
-              
               <div className="p-4 rounded-lg bg-green-light-text max-w-sm">
                 <div className="w-full inline-flex items-center justify-center lg:justify-start gap-2">
                   <svg
@@ -184,28 +183,33 @@ export default function Home() {
                     <path
                       d="M29.7 31.98H20.3C19.88 31.98 19.41 31.65 19.27 31.25L15.13 19.67C14.54 18.01 15.23 17.5 16.65 18.52L20.55 21.31C21.2 21.76 21.94 21.53 22.22 20.8L23.98 16.11C24.54 14.61 25.47 14.61 26.03 16.11L27.79 20.8C28.07 21.53 28.81 21.76 29.45 21.31L33.11 18.7C34.67 17.58 35.42 18.15 34.78 19.96L30.74 31.27C30.59 31.65 30.12 31.98 29.7 31.98Z"
                       stroke="#0B251C"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M19.5 35H30.5"
                       stroke="#0B251C"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M22.5 27H27.5"
                       stroke="#0B251C"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
-                  <h3 className="text-lg sm:text-xl text-green-dark font-semibold">Pilih Paket Harga</h3>
+                  <h3 className="text-sm lg:text-base text-green-dark font-semibold">
+                    Pilih Paket Harga
+                  </h3>
                 </div>
-                <p className="pt-1 lg:pt-4 text-sm sm:text-base text-center lg:text-left">Pilih Paket Website yang sesuai dengan kebutuhan bisnismu</p>
+                <p className="pt-1 lg:pt-4 text-xs md:text-sm lg:text-base text-center lg:text-left">
+                  Pilih Paket Website yang sesuai dengan kebutuhan bisnismu.
+                  Klik Pesan Sekarang.
+                </p>
               </div>
               <div className="p-4 rounded-lg bg-green-light-text max-w-sm">
                 <div className="w-full inline-flex items-center justify-center lg:justify-start gap-2">
@@ -239,9 +243,14 @@ export default function Home() {
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <h3 className="text-lg sm:text-xl text-green-dark font-semibold">Tentukan Design</h3>
+                  <h3 className="text-sm lg:text-base text-green-dark font-semibold">
+                    Tentukan Design
+                  </h3>
                 </div>
-                <p className="pt-1 lg:pt-4 text-sm sm:text-base text-center lg:text-left">Pilih template atau request design mu ke admin melalui WA (sesuai paket yg dipilih).</p>
+                <p className="pt-1 lg:pt-4 text-xs md:text-sm lg:text-base text-center lg:text-left">
+                  Pilih template atau request design mu ke admin melalui WA
+                  (sesuai paket yg dipilih).
+                </p>
               </div>
               <div className="p-4 rounded-lg bg-green-light-text max-w-sm">
                 <div className="w-full inline-flex items-center justify-center lg:justify-start gap-2">
@@ -275,13 +284,18 @@ export default function Home() {
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <h3 className="text-lg sm:text-xl text-green-dark font-semibold">Payment and Done!</h3>
+                  <h3 className="text-sm lg:text-base text-green-dark font-semibold">
+                    Payment and Done!
+                  </h3>
                 </div>
-                <p className="pt-1 lg:pt-4 text-sm sm:text-base text-center lg:text-left"> Lakukan pembayaran awal dan websitemu akan segera kami proses dengan cepat.</p>
+                <p className="pt-1 lg:pt-4 text-xs md:text-sm lg:text-base text-center lg:text-left">
+                  {" "}
+                  Lakukan pembayaran awal dan websitemu akan segera kami proses
+                  dengan cepat.
+                </p>
               </div>
-              
             </div>
-            <div className="relative hidden lg:flex lg:flex-row w-full pt-16 pl-32 mb-4 sm:mb-0 transform -scale-y-100 sm:justify-end lg:pr-40">
+            <div className="relative hidden lg:flex lg:flex-row w-full pl-32 sm:mb-0 transform -scale-y-100 sm:justify-end lg:pr-40">
               <Image
                 src={"/icon/arrow.svg"}
                 height={500}
@@ -290,6 +304,225 @@ export default function Home() {
                 className="text-left w-1/3"
               />
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="my-8 sm:my-0 py-8 lg:py-16">
+        <div className="container mx-auto sm:px-8">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-6 lg:gap-8">
+            <div className="relative flex justify-center items-center flex-1 w-1/2 md:w-full">
+              <Image
+                src={"/images/photo.png"}
+                height={400}
+                width={400}
+                alt="'photo"
+              />
+              <div className="absolute -left-8 md:left-8 lg:left-4 xl:left-24 2xl:left-40 -top-8 lg:-top-12">
+                <div className="bg-white rounded-lg p-2 lg:p-4 flex flex-row gap-2 items-center justify-center shadow-xl">
+                  <div className="bg-green-light rounded-full p-1">
+                    <Image
+                      src={"/icon/code.svg"}
+                      width={24}
+                      height={24}
+                      alt="ic-code"
+                    />
+                  </div>
+                  <h3 className="text-xs lg:text-sm font-medium ">
+                    Creative <br /> Design
+                  </h3>
+                </div>
+              </div>
+              <div className="absolute -right-8 md:right-8 lg:right-4 xl:right-24 2xl:right-32 bottom-8 lg:bottom-12">
+                <div className="bg-white rounded-lg p-2 lg:p-4 flex flex-row gap-2 items-center justify-center shadow-xl">
+                  <div className="bg-green-light rounded-full p-1">
+                    <Image
+                      src={"/icon/chart.svg"}
+                      width={24}
+                      height={24}
+                      alt="ic-code"
+                    />
+                  </div>
+                  <h3 className="text-xs lg:text-sm font-medium ">
+                    Website Cepat <br /> Trafik Tinggi
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col flex-1 gap-2 px-16 md:px-8 pt-2 md:pt-0">
+              <ul className=" flex flex-row flex-initial">
+                <li className="pr-1">
+                  <Image
+                    src={"/icon/star.svg"}
+                    height={24}
+                    width={24}
+                    alt="star"
+                    className="object-contain w-5 lg:w-full"
+                  />
+                </li>
+                <li className="pr-1">
+                  <Image
+                    src={"/icon/star.svg"}
+                    height={24}
+                    width={24}
+                    alt="star"
+                    className="object-contain w-5 lg:w-full"
+                  />
+                </li>
+                <li className="pr-1">
+                  <Image
+                    src={"/icon/star.svg"}
+                    height={24}
+                    width={24}
+                    alt="star"
+                    className="object-contain w-5 lg:w-full"
+                  />
+                </li>
+                <li className="pr-1">
+                  <Image
+                    src={"/icon/star.svg"}
+                    height={24}
+                    width={24}
+                    alt="star"
+                    className="object-contain w-5 lg:w-full"
+                  />
+                </li>
+                <li className="pr-1">
+                  <Image
+                    src={"/icon/star.svg"}
+                    height={24}
+                    width={24}
+                    alt="star"
+                    className="object-contain w-5 lg:w-full"
+                  />
+                </li>
+              </ul>
+              <h1 className="font-bold text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:max-w-xl leading-7 sm:leading-8 lg:tracking-wide">
+                WebIn Membantu usaha kita untuk{" "}
+                <span className="bg-green-light px-1">
+                  terjun ke dunia digital
+                </span>{" "}
+                dengan jangkauan pelanggan yang{" "}
+                <span className="bg-green-light px-1">lebih luas</span>
+              </h1>
+              <p className="text-base text-green-dark">
+                Moana liu, CEO Gardenesia
+              </p>
+              <div className="pt-8">
+                <ul className="mb-8 space-y-4 text-left">
+                  <li className="flex items-center space-x-3">
+                    {/* <!-- Icon --> */}
+                    <div className="p-1 rounded-full bg-green-dark/80">
+                      <svg
+                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span className="text-sm sm:text-base font-medium">
+                      Bisnis berhasil berkembang dengan website
+                    </span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    {/* <!-- Icon --> */}
+                    <div className="p-1 rounded-full bg-green-dark/80">
+                      <svg
+                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span className="text-sm sm:text-base font-medium">
+                      Dapat lebih dari 100 order dari Web Landing Page
+                    </span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    {/* <!-- Icon --> */}
+                    <div className="p-1 rounded-full bg-green-dark/80">
+                      <svg
+                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span className="text-sm sm:text-base font-medium">
+                      Punya sistem pendataan barang dan laporan keuangan sesuai
+                      kebutuhan Gardenesia
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-green-dark my-8 lg:my-16 px-0">
+        <div className="flex flex-col-reverse md:flex-row flex-shrink-0 justify-between gap-4">
+          <div className="flex-1 flex justify-center items-center px-8 lg:px-0 py-8 lh:py-0">
+            <div className="flex flex-col justify-center md:justify-start items-center md:items-start lg:max-w-xl">
+              <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold text-green-light-text">
+                Design Modern UX Friendly
+              </h1>
+              <p className="text-sm lg:text-base pt-2 lg:pt-3 text-center md:text-left text-white">
+                Buat Websitemu dan kembangkan bisnismu. Bebas pilih design
+                sesukamu. Puluhan design sudah kami siapkan.
+              </p>
+              <div className="mt-6 lg:mt-12 flex flex-col md:flex-row justify-center items-center gap-6">
+                <button
+                  className={` bg-green-light py-3 lg:py-4 px-6 lg:px-8 text-sm md:text-base font-medium text-green-dark rounded-full border-[1px] border-green-dark hover:bg-green-dark hover:border-white hover:text-white`}
+                >
+                  Pilih Design
+                </button>
+                <div className="flex flex-row justify-center items-center gap-2">
+                  <div className="bg-green-light-text rounded-full p-1">
+                    <svg
+                      className="flex-shrink-0 w-5 h-5 text-green-dark"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                  <p className="text-green-light-text text-sm">
+                    Free Maintanance
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex-1 w-full p-0">
+            <Image
+              src={"/images/design.jpg"}
+              height={1000}
+              width={1000}
+              alt="phote"
+              className="object-cover"
+            />
           </div>
         </div>
       </section>
