@@ -1,8 +1,9 @@
 import Navbar from "@/components/Navbar";
-import TabService from "@/components/TabService";
+import TabService from "@/components/Molekul/TabService";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import ButtonBorder from "@/components/Atom/ButtonBorder";
+import Footer from "@/components/Organism/Footer";
+
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 export default function Home() {
   return (
@@ -18,12 +19,12 @@ export default function Home() {
                 #BikinWebsiteGaPakeRibet
               </p>
               <div className="flex flex-auto gap-2 sm:gap-4 text-4xl xl:text-6xl font-bold">
-                <h1 className="px-1 highligth-text">Making</h1>
-                <span>Great</span>
+                <h1 className="px-1 highligth-text">Pilih</h1>
+                <span>Designmu</span>
               </div>
               <div className="pt-4 flex flex-auto gap-2 sm:gap-4 text-4xl xl:text-6xl font-bold">
-                <span>Business</span>
-                <h1 className=" px-1 highligth-text-reverse">Website</h1>
+                <span>Kembangkan</span>
+                <h1 className=" px-1 highligth-text-reverse">Bisnismu</h1>
               </div>
               <p className="my-4 lg:my-10 text-sm sm:text-sm md:text-base max-w-lg lg:max-w-2xl ">
                 Optimalkan jangkauan pelanggan bisnismu dengan Website keren dan
@@ -224,23 +225,23 @@ export default function Home() {
                     <path
                       d="M29.7 31.98H20.3C19.88 31.98 19.41 31.65 19.27 31.25L15.13 19.67C14.54 18.01 15.23 17.5 16.65 18.52L20.55 21.31C21.2 21.76 21.94 21.53 22.22 20.8L23.98 16.11C24.54 14.61 25.47 14.61 26.03 16.11L27.79 20.8C28.07 21.53 28.81 21.76 29.45 21.31L33.11 18.7C34.67 17.58 35.42 18.15 34.78 19.96L30.74 31.27C30.59 31.65 30.12 31.98 29.7 31.98Z"
                       stroke="#0B251C"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M19.5 35H30.5"
                       stroke="#0B251C"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M22.5 27H27.5"
                       stroke="#0B251C"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                   <h3 className="text-sm lg:text-base text-green-dark font-semibold">
@@ -265,23 +266,23 @@ export default function Home() {
                     <path
                       d="M29.7 31.98H20.3C19.88 31.98 19.41 31.65 19.27 31.25L15.13 19.67C14.54 18.01 15.23 17.5 16.65 18.52L20.55 21.31C21.2 21.76 21.94 21.53 22.22 20.8L23.98 16.11C24.54 14.61 25.47 14.61 26.03 16.11L27.79 20.8C28.07 21.53 28.81 21.76 29.45 21.31L33.11 18.7C34.67 17.58 35.42 18.15 34.78 19.96L30.74 31.27C30.59 31.65 30.12 31.98 29.7 31.98Z"
                       stroke="#0B251C"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M19.5 35H30.5"
                       stroke="#0B251C"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M22.5 27H27.5"
                       stroke="#0B251C"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                   <h3 className="text-sm lg:text-base text-green-dark font-semibold">
@@ -397,7 +398,7 @@ export default function Home() {
                 </li>
               </ul>
               <h1 className="font-bold text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:max-w-xl leading-7 sm:leading-8 lg:tracking-wide">
-                WebIn Membantu usaha kita untuk{" "}
+                Skala Membantu usaha kita untuk{" "}
                 <span className="bg-green-light px-1">
                   terjun ke dunia digital
                 </span>{" "}
@@ -405,7 +406,7 @@ export default function Home() {
                 <span className="bg-green-light px-1">lebih luas</span>
               </h1>
               <p className="text-base text-green-dark">
-                Moana liu, CEO Gardenesia
+                Moana Liu, CEO Gardenesia
               </p>
               <div className="pt-8">
                 <ul className="mb-8 space-y-4 text-left">
@@ -476,7 +477,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-green-dark my-8 lg:my-16 px-0">
+      <section className="bg-green-dark px-0">
         <div className="flex flex-col-reverse md:flex-row flex-shrink-0 justify-between gap-4">
           <div className="flex-1 flex justify-center items-center px-8 lg:px-0 py-8 lh:py-0">
             <div className="flex flex-col justify-center md:justify-start items-center md:items-start lg:max-w-xl">
@@ -526,6 +527,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 }

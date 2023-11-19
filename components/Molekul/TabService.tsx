@@ -1,10 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
-import TabWordpress from "./Organism/TabWordpress";
-import TabCustom from "./Organism/TabCustom";
-import TabwithDatabase from "./Organism/TabwithDatabase";
+import TabWordpress from "./TabWordpress";
+import TabCustom from "./TabCustom";
+import TabwithDatabase from "./TabwithDatabase";
 
 const tabData = ["regular", "pro", "custom"];
 

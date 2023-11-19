@@ -7,8 +7,7 @@ import ButtonSolid from "./Atom/ButtonSolid";
 import ButtonBorder from "./Atom/ButtonBorder";
 
 const menu = [
-  { name: "Showcase", href: "/" },
-  { name: "Service", href: "#" },
+  { name: "Features", href: "/" },
   { name: "Pricing", href: "#" },
   { name: "About Us", href: "#" }
 ];
@@ -28,11 +27,11 @@ export default function Navbar() {
   }
   return (
     <div className="container z-[100]">
-      <section className="fixed w-full z-10 px-8 md:px-12 dark:bg-black bg-green-dark backdrop-blur-md dark:transition dark:ease-in dark:duration-200">
+      <section className="fixed w-full z-10 px-8 md:px-12 bg-green-dark backdrop-blur-md dark:transition dark:ease-in dark:duration-200">
         <div className="flex justify-between items-center">
           <div className="w-24 h-8 my-6 md:w-32 flex flex-row justify-center items-center gap-2">
             <Image
-              src="/icon/logo.svg"
+              src="/images/logo-white.png"
               alt="ic-main"
               width={100}
               height={100}
