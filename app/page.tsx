@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <main
         className={`p-0 m-0 bg-[#EDF3F1] overflow-hidden ${inter.className}`}
       >
@@ -16,7 +16,7 @@ export default function Home() {
           <div className="flex flex-1 sm:flex-row flex-col-reverse gap-4 xl:gap-8 items-center justify-between pt-28 sm:pt-40 pb-8 sm:pb-16 px-4 sm:px-8 lg:px-16 2xl:p-32">
             <div className="flex flex-col justify-start items-start pl-4">
               <p className="text-lg text-green-light font-medium bg-green-dark px-1 my-4">
-                #BikinWebsiteGaPakeRibet
+                #BikinWebsiteGaPakeRibet-siuuu
               </p>
               <div className="flex flex-auto gap-2 sm:gap-4 text-4xl xl:text-6xl font-bold">
                 <h1 className="px-1 highligth-text">Pilih</h1>
