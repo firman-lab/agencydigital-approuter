@@ -8,8 +8,8 @@ import ButtonBorder from "./Atom/ButtonBorder";
 
 const menu = [
   { name: "Features", href: "/" },
-  { name: "Pricing", href: "#" },
-  { name: "About Us", href: "#" }
+  { name: "Pricing", href: "#pricing" },
+  { name: "Order Tips", href: "#order" },
 ];
 
 export default function Navbar() {

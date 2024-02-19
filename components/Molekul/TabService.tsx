@@ -11,7 +11,7 @@ export default function TabService() {
   const [openTab, setOpenTab] = useState<number>(0);
 
   return (
-    <section className="w-full container mx-auto my-8 sm:my-16">
+    <section id="pricing" className="w-full container mx-auto my-8 sm:my-16">
       <div className="px-0">
         <div className="px-2">
           <div className="flex flex-col justify-center items-center my-4 sm:my-8 text-green-dark text-center sm:text-left leading-9">

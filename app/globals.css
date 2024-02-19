@@ -2,39 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: #edf3f1;
-  --background-end-rgb: #edf3f1;
-}
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-.highligth-text {
-  background: linear-gradient(to bottom, transparent 70%, #b7eb38 30%);
-}
-.highligth-text-reverse {
-  background: linear-gradient(to top, transparent 40%, #b7eb38 60%);
-}
-
-@layer utilities {
-  .active {
-    @apply !text-green-light dark:!text-green-light underline underline-offset-8 decoration-slate-400;
-  }
+html {
+  scroll-behavior: smooth;
 }

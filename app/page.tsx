@@ -3,6 +3,7 @@ import TabService from "@/components/Molekul/TabService";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Footer from "@/components/Organism/Footer";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
           <div className="flex flex-1 sm:flex-row flex-col-reverse gap-4 xl:gap-8 items-center justify-between pt-28 sm:pt-40 pb-8 sm:pb-16 px-4 sm:px-8 lg:px-16 2xl:p-32">
             <div className="flex flex-col justify-start items-start pl-4">
               <p className="text-lg text-green-light font-medium bg-green-dark px-1 my-4">
-                #BikinWebsiteGaPakeRibet
+                #BikinWebsiteGaPakeRibet-siuuu
               </p>
               <div className="flex flex-auto gap-2 sm:gap-4 text-4xl xl:text-6xl font-bold">
                 <h1 className="px-1 highligth-text">Pilih</h1>
@@ -37,11 +38,12 @@ export default function Home() {
                 >
                   Get Started
                 </button>
-                <button
+                <Link
+                  href="#pricing"
                   className={`bg-transparent py-2 lg:py-4 px-4 lg:px-8 text-sm md:text-base font-medium text-green-dark rounded-full border-green-dark border-[1px] hover:bg-green-light hover:border-greenlight hover:text-green-dark`}
                 >
                   Pricelist
-                </button>
+                </Link>
               </div>
             </div>
             <div className="flex-initial justify-start hidden sm:flex">
@@ -152,7 +154,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-white">
+      <section id="order" className="bg-white py-8">
         <div className="container mx-auto py-8 sm:py-16 px-8 sm:px-16">
           <div className="flex flex-col justify-center items-center gap-2 sm:gap-4">
             <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold">
@@ -527,7 +529,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 }
