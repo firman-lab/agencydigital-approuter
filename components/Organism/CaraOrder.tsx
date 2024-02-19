@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function CaraOrder() {
   return (
-    <section className="bg-white">
+    <section id="order" className="bg-white pt-6">
       <div className="container mx-auto py-8 sm:py-16 px-8 sm:px-16">
         <div className="flex flex-col justify-center items-center gap-2 sm:gap-4">
           <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold">
