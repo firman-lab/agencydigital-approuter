@@ -14,19 +14,24 @@ export default function Home() {
         className={`p-0 m-0 bg-[#EDF3F1] overflow-hidden ${inter.className}`}
       >
         <section className="container mx-auto">
-          <div className="flex flex-1 sm:flex-row flex-col-reverse gap-4 xl:gap-8 items-center justify-between pt-28 sm:pt-40 pb-8 sm:pb-16 px-4 sm:px-8 lg:px-16 2xl:p-32">
-            <div className="flex flex-col justify-start items-start pl-4">
+          <div className="flex sm:flex-row flex-col-reverse gap-4 xl:gap-8 items-center justify-between pt-28 sm:pt-40 pb-8 sm:pb-16 px-4 sm:px-8 lg:px-16 2xl:p-32">
+            <div className="flex flex-col justify-center items-start pl-4">
               <p className="text-lg text-green-light font-medium bg-green-dark px-1 my-4">
-                #BikinWebsiteGaPakeRibet-siuuu
+                #BikinWebsiteGaPakeRibet
               </p>
               <div className="flex flex-auto gap-2 sm:gap-4 text-4xl xl:text-6xl font-bold">
+                <h1 className="px-1 highligth-text">
+                  Buat Websitemu Sekarang!
+                </h1>
+              </div>
+              {/* <div className="flex flex-auto gap-2 sm:gap-4 text-4xl xl:text-6xl font-bold">
                 <h1 className="px-1 highligth-text">Pilih</h1>
                 <span>Designmu</span>
               </div>
               <div className="pt-4 flex flex-auto gap-2 sm:gap-4 text-4xl xl:text-6xl font-bold">
                 <span>Kembangkan</span>
                 <h1 className=" px-1 highligth-text-reverse">Bisnismu</h1>
-              </div>
+              </div> */}
               <p className="my-4 lg:my-10 text-sm sm:text-sm md:text-base max-w-lg lg:max-w-2xl ">
                 Optimalkan jangkauan pelanggan bisnismu dengan Website keren dan
                 Iklan Digital terpercaya. Raup keuntungan lebih dengan biaya
@@ -46,7 +51,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="flex-initial justify-start hidden sm:flex">
+            <div className="flex-initial justify-start hidden sm:flex max-w-2xl">
               <Image
                 src={"/images/banner_hero.png"}
                 width={550}

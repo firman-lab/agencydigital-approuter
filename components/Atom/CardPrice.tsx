@@ -4,25 +4,32 @@ interface CardPrice {
   title: string;
   desc: string;
   price: string;
-  bandage:boolean;
+  bandage: boolean;
   features: Array<string>;
+  href: string;
 }
 
-export default function CardPrice(props: CardPrice) {
-  const { title, desc, price, bandage, features } = props;
+export default function CardPrice(props: Readonly<CardPrice>) {
+  const { title, desc, price, bandage, features, href } = props;
   return (
     <>
       {/* <!-- Pricing Card --> */}
       <div className="h-full flex flex-col p-6 xl:p-8 mx-auto max-w-lg text-center bg-green-dark text-white rounded-lg hover:scale-105 transition-all ease-in">
         <div className="relative">
-          <div className={`${bandage === true ? "block" : "hidden"} absolute -top-10 right-0 px-4 py-2 bg-green-light text-lg font-semibold text-green-dark rounded-tr-lg rounded-bl-lg`}>Terlaris!</div>
-            </div>
+          <div
+            className={`${
+              bandage === true ? "block" : "hidden"
+            } absolute -top-10 right-0 px-4 py-2 bg-green-light text-lg font-semibold text-green-dark rounded-tr-lg rounded-bl-lg`}
+          >
+            Terlaris!
+          </div>
+        </div>
         <h3 className="mb-4 text-2xl font-semibold">{title}</h3>
         <p className="font-light text-xs sm:text-base 2xl:text-lg text-gray-400">
           {desc}
         </p>
         <div className="flex justify-center items-baseline my-8">
-        <span className="text-white pr-2">IDR</span>
+          <span className="text-white pr-2">IDR</span>
           <span className="mr-2 text-2xl sm:text-3xl lg:text-5xl font-extrabold">{`${price}`}</span>
           <span className="text-gray-400">/Bulan</span>
         </div>
@@ -49,11 +56,14 @@ export default function CardPrice(props: CardPrice) {
             ))}
           </ul>
           <div className="flex flex-row justify-between items-center">
-          <p className="text-green-light-text/70 text-right pr-4 py-4 text-xs block lg:hidden">&larr; Swipe left</p>
-          {/* <p className="text-green-light-text/70 text-right pr-4 py-4 text-xs block lg:hidden">Swipe right &rarr;</p> */}
+            <p className="text-green-light-text/70 text-right pr-4 py-4 text-xs block lg:hidden">
+              &larr; Swipe left
+            </p>
+            {/* <p className="text-green-light-text/70 text-right pr-4 py-4 text-xs block lg:hidden">Swipe right &rarr;</p> */}
           </div>
           <a
-            href="#"
+            href={href}
+            target="_blank"
             className="text-green-dark bg-green-light hover:bg-green-light/50 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-green-dark hover:text-green-light-text dark:focus:ring-primary-900"
           >
             Pesan Sekarang
