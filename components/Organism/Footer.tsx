@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="my-8 sm:my-16">
-      <div className="container mx-auto">
-        <div className="w-full flex flex-col md:flex-row justify-between items-start gap-8 md:px-0 lg:px-16">
+    <footer className="">
+      <div className="container mx-auto my-8 sm:my-16">
+        <div className="w-full flex flex-col md:flex-row justify-between items-start gap-8 px-4 lg:px-16">
           <div className="flex flex-col justify-start items-start gap-2 pt-2 md:gap-4 max-w-xs lg:max-w-sm">
             <Image
               src={"/images/logo.png"}
@@ -72,6 +73,18 @@ export default function Footer() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex flex-row justify-center items-center bg-green-dark py-4 text-gray-300 text-xs">
+        {/* <p>webskala @2024 </p> */}
+        <span>
+          <Link
+            className="text-gray-300 text-xs hover:text-blue-400"
+            href="https://soonpro.my.id"
+            target="_blank"
+          >
+            webskala 2024 by soonpro.my.id
+          </Link>
+        </span>
       </div>
     </footer>
   );

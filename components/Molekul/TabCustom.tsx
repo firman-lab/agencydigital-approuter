@@ -17,10 +17,12 @@ export default function TabCustom() {
           <div className="flex flex-col mx-auto gap-8 lg:p-6">
             <div className="flex flex-col justify-center sm:justify-start items-center sm:items-start">
               <h1 className="text-xl text-center sm:text-left sm:text-2xl lg:text-3xl font-bold text-white">
-                Company Profile, E-Comerce, Travel Build with Wordpress
+                Company Profile, E-Comerce, Travel Website Build with Wordpress
               </h1>
               <p className="text-sm sm:text-base text-center sm:text-left leading-6 pt-2 text-gray-400">
-                Paket ini dibuat dengan wordpress dengan design premium dari kami. Dibuat untuk anda pebisnis yang ingin membranding bisnis anda di dunia digital.
+                Paket ini dibuat dengan wordpress dengan design premium dari
+                kami. Dibuat untuk anda pebisnis yang ingin membranding bisnis
+                anda di dunia digital.
               </p>
             </div>
             <div className="flex flex-col justify-center items-center">
@@ -67,7 +69,7 @@ export default function TabCustom() {
                   ></path>
                 </svg>
                 <span className="text-sm sm:text-base">
-                  Integrasi ke Database
+                  Integrasi ke Database (Simple)
                 </span>
               </li>
               <li className="flex items-center space-x-3">
@@ -126,7 +128,8 @@ export default function TabCustom() {
               </li>
             </ul>
             <a
-              href="#"
+              href="https://wa.me/6283863011200?text=I'm%20interested%20to%20order%20Custom%20Website%20Pack!"
+              target="_blank"
               className="text-green-dark bg-green-light hover:bg-green-light/50 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-green-dark hover:text-green-light-text dark:focus:ring-primary-900"
             >
               Pesan Sekarang

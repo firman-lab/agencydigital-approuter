@@ -26,6 +26,7 @@ export default function TabWordpress() {
                 "1 Sub Domain (svara.tertanam.com)",
                 "No Hidden, or Setup fees",
               ]}
+              href="https://wa.me/6283863011200?text=I'm%20interested%20to%20order%20Reguler%20Pack!"
             />
             <CardPrice
               title="Premium"
@@ -39,6 +40,7 @@ export default function TabWordpress() {
                 "No Hidden, or Setup fees",
                 "Free 1x update Design per 3 bulan",
               ]}
+              href="https://wa.me/6283863011200?text=I'm%20interested%20to%20order%20Premium%20Pack!"
             />
             <CardPrice
               title="Full Custom"
@@ -53,6 +55,7 @@ export default function TabWordpress() {
                 "Premium Support 24 Jam",
                 "Free 1x Update Design perbulan",
               ]}
+              href="https://wa.me/6283863011200?text=I'm%20interested%20to%20order%20Full%20Custom%20Pack!"
             />
           </div>
           <div className="block lg:hidden">
@@ -77,6 +80,7 @@ export default function TabWordpress() {
                     "1 Sub Domain (svara.tertanam.com)",
                     "No Hidden, or Setup fees",
                   ]}
+                  href="https://wa.me/6283863011200?text=I'm%20interested%20to%20order%20Reguler%20Pack!"
                 />
               </SwiperSlide>
               <SwiperSlide className=" py-4 px-2">
@@ -92,6 +96,7 @@ export default function TabWordpress() {
                     "No Hidden, or Setup fees",
                     "Free 1x update Design per 3 bulan",
                   ]}
+                  href="https://wa.me/6283863011200?text=I'm%20interested%20to%20order%20Premium%20Pack!"
                 />
               </SwiperSlide>
               <SwiperSlide className="py-4 px-2">
@@ -108,6 +113,7 @@ export default function TabWordpress() {
                     "Premium Support 24 Jam",
                     "Free 1x Update Design perbulan",
                   ]}
+                  href="https://wa.me/6283863011200?text=I'm%20interested%20to%20order%20Full%20Custom%20Pack!"
                 />
               </SwiperSlide>
             </Swiper>

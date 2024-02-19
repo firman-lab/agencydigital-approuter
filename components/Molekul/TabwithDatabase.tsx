@@ -17,17 +17,18 @@ export default function TabwithDatabase() {
           <div className="flex flex-col mx-auto gap-8 lg:p-6">
             <div className="flex flex-col justify-center sm:justify-start items-center sm:items-start">
               <h1 className="text-xl sm:text-2xl lg:text-3xl text-center sm:text-left font-bold text-white">
-                Website Software as a Service
-                Terintegrasi Database
+                Website Software as a Service Terintegrasi Database
               </h1>
               <p className="text-sm sm:text-base text-center sm:text-left leading-6 pt-2 text-gray-400">
-                Paket ini menyediakan website tanpa wordpress dan full custom sesuai kebutuhan bisnis anda meliputi Custom Database, custom User Interface, dll.
+                Paket ini menyediakan website tanpa wordpress dan full custom
+                sesuai kebutuhan bisnis anda meliputi Custom Database, custom
+                User Interface, dll.
               </p>
             </div>
             <div className="flex flex-col justify-center items-center">
               <p className="text-gray-300 text-sm sm:text-base">Start From</p>
               <div className="flex justify-center items-baseline">
-              <p className="text-white pr-2">IDR</p>
+                <p className="text-white pr-2">IDR</p>
                 <span className="mr-2 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">
                   4.499K
                 </span>
@@ -127,7 +128,8 @@ export default function TabwithDatabase() {
               </li>
             </ul>
             <a
-              href="#"
+              href="https://wa.me/6283863011200?text=I'm%20interested%20to%20order%20Full%20Custom%20SAAS%20website!"
+              target="_blank"
               className="text-green-dark bg-green-light hover:bg-green-light/50 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-green-dark hover:text-green-light-text dark:focus:ring-primary-900"
             >
               Pesan Sekarang

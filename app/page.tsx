@@ -9,19 +9,22 @@ import DesignHero from "@/components/Organism/DesignHero";
 import CaraOrder from "@/components/Organism/CaraOrder";
 import Client from "@/components/Organism/Client";
 import SubHero from "@/components/Organism/SubHero";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <main className={`p-0 m-0 bg-[#EDF3F1] overflow-hidden ${inter.className}`}>
+      <Navbar />x
+      <main
+        className={`p-0 m-0 bg-[#EDF3F1] overflow-hidden ${inter.className}`}
+      >
         <Heroes />
         {/* <Client /> */}
         <CountClient />
       </main>
       <TabService />
-      <SubHero/>
+      <SubHero />
       <CaraOrder />
       <Review />
       <DesignHero />
