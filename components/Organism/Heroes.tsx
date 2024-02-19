@@ -10,8 +10,8 @@ export default function Heroes() {
             #BikinWebsiteGaPakeRibet
           </p>
           <div className="flex flex-auto gap-2 sm:gap-4 text-4xl xl:text-6xl font-bold">
-            <h1 className="px-1 highligth-text">Pilih</h1>
-            <span>Design Webmu</span>
+            <h1 className="px-1 highligth-text">Buat</h1>
+            <span>Websitemu</span>
           </div>
           <div className="pt-4 flex flex-auto gap-2 sm:gap-4 text-4xl xl:text-6xl font-bold">
             <span>Kembangkan</span>
@@ -19,8 +19,8 @@ export default function Heroes() {
           </div>
           <p className="my-4 lg:my-10 text-sm sm:text-sm md:text-base max-w-lg lg:max-w-2xl ">
             Optimalkan jangkauan pelanggan bisnismu dengan Website keren dan
-            Iklan Digital terpercaya. Raup keuntungan lebih dengan biaya sangat
-            terjangkau.
+            Iklan Digital terpercaya. Raup keuntungan lebih dengan biaya
+            terjangkau dari kami.
           </p>
           <div className="flex flex-shrink flex-row justify-start items-center gap-4 sm:gap-8">
             <button

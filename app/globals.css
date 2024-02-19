@@ -5,3 +5,9 @@
 html {
   scroll-behavior: smooth;
 }
+ 
+@layer components {
+  .active{
+    @apply !text-green-light underline underline-offset-8 decoration-gray-300 decoration-2;
+  }
+}
