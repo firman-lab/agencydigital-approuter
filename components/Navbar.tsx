@@ -53,8 +53,8 @@ export default function Navbar() {
               ))}
             </div>
             <div className="flex flex-col md:flex-row gap-4">
-              <ButtonSolid title="Call Sales" bg="bg-white" />
-              <ButtonBorder title="Our Client" />
+              {/* <ButtonSolid title="Konsultasi" bg="bg-white" /> */}
+              <ButtonBorder title="Konsultasi" />
             </div>
           </div>
           <div className="md:hidden">

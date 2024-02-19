@@ -16,10 +16,10 @@ export default function TabService() {
         <div className="px-2">
           <div className="flex flex-col justify-center items-center my-4 sm:my-8 text-green-dark text-center sm:text-left leading-9">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-0 sm:mb-4">
-              Good for your Business
+              Pricelist Jasa Website
             </h2>
             <h2 className="text-base">
-              Choose this special price for your website
+              Pilih yang sesuai kebutuhanmu, butuh konsultasi? langsung hubungi kami siap membantu.
             </h2>
           </div>
           <ul className="bg-green-light-text rounded-lg py-2 flex flex-row flex-nowrap flex-1 justify-center items-center -mb-px text-sm font-medium gap-2 sm:gap-8 xl:gap-16 text-center text-gray-500 dark:text-gray-400 hover:cursor-pointer">
