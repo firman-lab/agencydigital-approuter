@@ -3,12 +3,13 @@ import TabService from "@/components/Molekul/TabService";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Footer from "@/components/Organism/Footer";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 export default function Home() {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <main
         className={`p-0 m-0 bg-[#EDF3F1] overflow-hidden ${inter.className}`}
       >
@@ -37,11 +38,12 @@ export default function Home() {
                 >
                   Get Started
                 </button>
-                <button
+                <Link
+                  href="#pricing"
                   className={`bg-transparent py-2 lg:py-4 px-4 lg:px-8 text-sm md:text-base font-medium text-green-dark rounded-full border-green-dark border-[1px] hover:bg-green-light hover:border-greenlight hover:text-green-dark`}
                 >
                   Pricelist
-                </button>
+                </Link>
               </div>
             </div>
             <div className="flex-initial justify-start hidden sm:flex">
@@ -152,7 +154,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-white">
+      <section id="order" className="bg-white py-8">
         <div className="container mx-auto py-8 sm:py-16 px-8 sm:px-16">
           <div className="flex flex-col justify-center items-center gap-2 sm:gap-4">
             <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold">
@@ -527,7 +529,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 }
