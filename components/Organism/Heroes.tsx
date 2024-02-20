@@ -4,20 +4,15 @@ import Image from "next/image";
 export default function Heroes() {
   return (
     <section className="mx-auto">
-      <div className="flex flex-1 sm:flex-row flex-col-reverse gap-4 xl:gap-8 items-center justify-between pt-28 sm:pt-44 pb-8 sm:pb-20 px-4 sm:px-8 lg:px-16 2xl:px-32">
-        <div className="flex flex-col justify-start items-start pl-4">
+      <div className="flex sm:flex-row flex-col-reverse gap-4 xl:gap-8 items-center justify-between pt-28 sm:pt-44 pb-8 sm:pb-20 px-4 sm:px-8 lg:px-16 2xl:px-32">
+        <div className="flex flex-1 flex-col justify-start items-start pl-4">
           <p className="text-lg text-green-light font-medium bg-green-dark px-1 my-4">
             #BikinWebsiteGaPakeRibet
           </p>
-          <div className="flex flex-auto gap-2 sm:gap-4 text-4xl xl:text-6xl font-bold">
-            <h1 className="px-1 highligth-text">Buat</h1>
-            <span>Websitemu</span>
+          <div className="flex flex-1 gap-2 sm:gap-4 text-4xl xl:text-6xl font-bold">
+            <h1 className="px-1 tracking-wide highligth-text">Buat Websitemu, Kembangkan Bisnismu</h1>
           </div>
-          <div className="pt-4 flex flex-auto gap-2 sm:gap-4 text-4xl xl:text-6xl font-bold">
-            <span>Kembangkan</span>
-            <h1 className=" px-1 highligth-text-reverse">Bisnismu</h1>
-          </div>
-          <p className="my-4 lg:my-10 text-sm sm:text-sm md:text-base max-w-lg lg:max-w-2xl ">
+          <p className="my-4 lg:my-6 text-sm sm:text-sm md:text-base max-w-lg lg:max-w-2xl ">
             Optimalkan jangkauan pelanggan bisnismu dengan Website keren dan
             Iklan Digital terpercaya. Raup keuntungan lebih dengan biaya
             terjangkau dari kami.
@@ -35,7 +30,7 @@ export default function Heroes() {
             </button>
           </div>
         </div>
-        <div className="flex-initial justify-start hidden sm:flex">
+        <div className="flex-1 justify-start hidden sm:flex">
           <Image
             src={"/images/banner_hero.png"}
             width={550}
